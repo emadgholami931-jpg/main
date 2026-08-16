@@ -1,4 +1,4 @@
-# flashcard 2.1.0
+# flashcard 2.2.0
 
 A local-first Android English → Persian vocabulary flashcard app with Gemini + Groq AI enrichment and FSRS-6 review scheduling.
 
@@ -19,11 +19,12 @@ A local-first Android English → Persian vocabulary flashcard app with Gemini +
 - Precise AI retry classification: network/timeouts/429/5xx retry; permanent authentication/request errors fail fast; Auto can fall back to the other provider.
 - FSRS-6 review scheduling with **Again / Hard / Good / Easy**.
 - FSRS review logs are stored locally for future analysis/optimization.
+- Home History chart with stacked Again / Hard / Good / Easy bars and Weekly, Monthly, and Yearly views.
 - Full JSON backup/restore of cards + FSRS state + review history.
 - CSV export of card content.
 - Reset all review progress, retry all failed AI cards, and delete all cards.
 - Real Room database migration from schema version 1 to version 2.
-- Central app versioning through `version.properties` (`2.1.1`, versionCode `20101`).
+- Central app versioning through `version.properties` (`2.2.0`, versionCode `20200`).
 - GitHub Actions publishes only a permanently signed release APK; the workflow fails if release-signing secrets are missing.
 
 ## Create a new GitHub repository
@@ -56,7 +57,7 @@ Then create these **GitHub repository Actions secrets**:
 
 Push any commit or manually run the workflow again. The artifact will then contain:
 
-- `flashcard-2.1.1-20101-release.apk` — signed production APK
+- `flashcard-2.2.0-20200-release.apk` — signed production APK
 - `signing-certificate.txt` — signing certificate details for verifying key continuity
 - `mapping-release.txt` — R8 mapping file; keep it for crash-symbolication/debugging
 
@@ -98,7 +99,7 @@ Settings provides:
 
 API keys are intentionally excluded from all exports and backups.
 
-Backups created by versions 2.0.0 and 2.1.0 remain compatible with 2.1.1 because the Room schema and backup format are unchanged.
+Backups created by versions 2.0.0, 2.1.x, and 2.2.0 remain mutually compatible at the data-format level because the Room schema and backup format remain at v2.
 
 ## FSRS-6
 

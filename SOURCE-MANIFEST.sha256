@@ -1,8 +1,8 @@
 3a4036efe59acdbd34485e74b4e086b53813cff026660e863a9ef2c78aca87ad  ./.github/workflows/android-apk.yml
 bc87079faec2612c64c1d82152d658136c7a48297baaf72970cf0b5667f6c8a5  ./.gitignore
-bf7cc112005665632bc89bfe4fe24cf99cb1354c848575d3c753d85fa84df21b  ./CHANGELOG.md
+a4f965a43e742c575c0e1e26f4a8621d952e6fe48e5cfb54fa73959898bd6d2b  ./CHANGELOG.md
 b2d01060c7979bcd7e21743bcb08c11ed6138bff77501c99e98045d3d0d73e99  ./PROJECT-CHECKLIST.md
-61d0003bfe3f786bbb2be9b4c4c05f4466d8dee948c86e4aa058d81985016296  ./README.md
+8b03efe504c4146aeb1ea54ae1310145d7cea5b7d509024111b3e85d4b25ff35  ./README.md
 fea2edfac0273cc771f153c0b05005052e8e481772381a43d9715f6b70fbbe88  ./UPDATE-RELEASE-GUIDE.md
 3e532f0a8c2c5d4281212b4bcb3b26a17bde240fdfb0636dbc327629e3080731  ./UPGRADE-FROM-2.0.0.md
 5f96d37283e72aa3409e8b73ff3881f68ce5d79d4776c212069b08793628485a  ./VALIDATION.md
@@ -11,7 +11,7 @@ e1a7c747033f83f826a2cfdbe437035aa532c59102cbde9cb99357fb3a4f8b4b  ./app/proguard
 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./app/schemas/.gitkeep
 fcc4a798af8780a05abfb233cbf470d40a6ba3bb2d7b0a305c8a0d3bc0d3879f  ./app/src/main/AndroidManifest.xml
 b8969a965026183409a3b5e56f21e2d5fa6a30bce3c9139b5c8b849e308b25d7  ./app/src/main/java/com/vazheyar/app/MainActivity.kt
-91f0037346d1403c0d908c27d70574d5945becce77c996f95b0380cd95c5ef0e  ./app/src/main/java/com/vazheyar/app/MainViewModel.kt
+2d98aa29ba638a47f8fb6f0f67fdbb3495e8c43094075011a2cccff658fdabd0  ./app/src/main/java/com/vazheyar/app/MainViewModel.kt
 cfe5a84a566e46f40ca88b07c905df8472e7559cc08f9ac33d87f17437f68ec2  ./app/src/main/java/com/vazheyar/app/VazheYarApp.kt
 bc6603e9b9d0c17b6939fd7eb258980c20a8d2991835af49982eeebe377b7f0f  ./app/src/main/java/com/vazheyar/app/ai/AiEnrichmentClient.kt
 92d0fee80b8f6dc5f4e21346067ce65199fa4a14e3f2339030a466d65da6f63c  ./app/src/main/java/com/vazheyar/app/ai/EnrichmentWorker.kt
@@ -22,14 +22,16 @@ fab175cdafc8ec748d7f56515f4fbd6e2280145fb3bbf17e9e07b247ef3ad6c2  ./app/src/main
 a4fce958c34521bde888cc326b76f7ae2327d3af61bd3662ab91fee2a278ebb4  ./app/src/main/java/com/vazheyar/app/data/CsvWordParser.kt
 8da256eb579a5a02bc8c8bd46e88d68d1212476a5aaad6f085f56ad9f2cea621  ./app/src/main/java/com/vazheyar/app/data/FlashcardDao.kt
 d60d69d456c7deb65baf573f60987b57f5a5f01af613ab7d5f80562faf6829f0  ./app/src/main/java/com/vazheyar/app/data/FlashcardEntity.kt
-c1cada698287cfdc6a034698574650a09ba5eaf44342af639d46347fae5b84c2  ./app/src/main/java/com/vazheyar/app/data/ReviewLogDao.kt
+93db7ab74f9f875d1e57b784c30ffa671baaee2d7fd56a23dd6400359f507662  ./app/src/main/java/com/vazheyar/app/data/ReviewLogDao.kt
 21180e8c0b998e575b3017f8ef88ff019e98868be9a107241ab05fc9f8ec5f71  ./app/src/main/java/com/vazheyar/app/data/ReviewLogEntity.kt
 0f603cb05061579f4b645acc14a39c044f3d963a65830d8573c5968f3d896d0d  ./app/src/main/java/com/vazheyar/app/data/WordNormalizer.kt
+bef416733716e7b3458d2107dfae4b0b49bde66a4296b78df2585a1764f4598f  ./app/src/main/java/com/vazheyar/app/review/ReviewHistory.kt
 5b9ba1619edb098ab00bb3ab46507640ba3edd48e7cfeff5f4883eac82f6ccf2  ./app/src/main/java/com/vazheyar/app/review/SpacedRepetition.kt
 490d66e9692a75bc26662ef4fe63de5a2036019fc2c225f2e0b6e5fdbaee975c  ./app/src/main/java/com/vazheyar/app/ui/AppThemeSettings.kt
+63e83f94a72be36c5a0bca58d5c5abfa44616c683e41afa335152f41994e8ec1  ./app/src/main/java/com/vazheyar/app/ui/ReviewHistorySection.kt
 9aa1e71f0c39623bae827ad41c49dd566659cac2313c7e9a77c58294f844dc78  ./app/src/main/java/com/vazheyar/app/ui/Theme.kt
 f94dfd77c37121eca767d14c027572d7eece2935a427c9cee0c35af3cd0c3b64  ./app/src/main/java/com/vazheyar/app/ui/TtsSpeaker.kt
-1b31da4f30e161924f9b3bcd7763427781f50191c5942c889911a4034644a95f  ./app/src/main/java/com/vazheyar/app/ui/VazheYarRoot.kt
+94f8414085ec1a25219c76ec4078908b9fd630f07a33f41be7db9cfa0ee65979  ./app/src/main/java/com/vazheyar/app/ui/VazheYarRoot.kt
 5056b7226b3f58e65a61739e8ab6f5c52099fccee3ae9aad0e8856f31709e3fa  ./app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
 5056b7226b3f58e65a61739e8ab6f5c52099fccee3ae9aad0e8856f31709e3fa  ./app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
 d8d27d57a8b43523d622b90c1ddde3d5b9e6748376425a3b6a49b66fc287c1b4  ./app/src/main/res/mipmap-hdpi/ic_launcher.png
@@ -53,6 +55,7 @@ e84bf8ef6f63e59e18dc23a4027043bb4a9b959ff155d493ac910c0154cc647e  ./app/src/main
 c1167a44be375753395ce44d3e0baf7db3eec2a50b96878e03253e72ebc53aea  ./app/src/test/java/com/vazheyar/app/data/CsvWordParserTest.kt
 91ee0fa10580e2244fd9a8f8a3e539e0abdda421d826a51d65549273e8795c4e  ./app/src/test/java/com/vazheyar/app/data/WordNormalizerTest.kt
 c07ceb4d4ff34f63bf27dfb88a49e130a0f02162a6ceb2af91b2606a9b395d49  ./app/src/test/java/com/vazheyar/app/review/FsrsSchedulerTest.kt
+d6a457d5bd8551418366052871cbe2068ffc6ab3bbab8852dbddc5f68f4061ef  ./app/src/test/java/com/vazheyar/app/review/ReviewHistoryAggregatorTest.kt
 76d2a010809e55104d7be0016f6ad8c9430a1198e82cf4110362be186ed79b55  ./build.gradle.kts
 a093e9bb81b3451c018e00395040520bee0d457dc83fbea128e3ea961c27f831  ./docs/ARCHITECTURE.md
 e285bdb892901f9e20a6ca43e321045165002a407a5b1da019b5c5c6fa3c858a  ./docs/app-icon-original.jpg
@@ -61,4 +64,4 @@ ed71edb01f3bc6798b6834ca475b5c3363ea46b0ed6bbf851a461b86bcbbad94  ./sample_words
 b392fec60d111591e9510f5b4abca16c0221c77765ed1c17537d3301004223aa  ./scripts/bump-version.sh
 d172f8a04d9ee4dca3e249313f53e9d4bdbb49abaafa344b943e8ce71382bdff  ./scripts/generate-signing-key.sh
 dc4b57c7ab1c6e236247f09babf82cf75924a341d44eda1d0622f008f0e4c7a0  ./settings.gradle.kts
-d9ec010e7e4097c60836ebdb9038e69ce6a987bf45e6566ba321c4ca062b2b47  ./version.properties
+0b27cccdd66a0cab564e50d79e38bf578d4e12824c350dac68b7ebae09382216  ./version.properties

@@ -60,6 +60,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val learnedCount = dao.learnedCount().stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), 0)
     val pendingCount = dao.pendingCount().stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), 0)
     val failedCount = dao.failedCount().stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), 0)
+    private val reviewHistorySince = System.currentTimeMillis() - 370L * 24L * 60L * 60L * 1_000L
+    val reviewHistory = reviewLogs.observeSince(reviewHistorySince)
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), emptyList())
 
     private val _dueCards = MutableStateFlow<List<FlashcardEntity>>(emptyList())
     val dueCards: StateFlow<List<FlashcardEntity>> = _dueCards

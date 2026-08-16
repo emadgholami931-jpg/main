@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.2.0
+
+- Added a Home History card with stacked Again/Hard/Good/Easy review bars.
+- Added Weekly (7 days), Monthly (30 days), and Yearly (12 months) history views.
+- History reads the existing Room review log, so reviews recorded before this update appear automatically.
+- Added live Room observation for review history and unit tests for daily/monthly aggregation boundaries.
+- Kept Room database schema at v2 and backup format at v2; no user-data migration is required from 2.1.1.
+
 ## 2.1.1
 
 - Hardened production update signing: release builds now require the permanent signing configuration.

@@ -178,6 +178,7 @@ private fun HomeScreen(vm: MainViewModel, onReview: () -> Unit) {
     val failed by vm.failedCount.collectAsStateCompat()
     val dueCount by vm.dueCount.collectAsStateCompat()
     val aiReady by vm.aiReady.collectAsStateCompat()
+    val reviewHistory by vm.reviewHistory.collectAsStateCompat()
 
     Column(
         Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(20.dp),
@@ -208,6 +209,8 @@ private fun HomeScreen(vm: MainViewModel, onReview: () -> Unit) {
             Spacer(Modifier.width(8.dp))
             Text(if (dueCount == 0) "Check reviews" else "Start review ($dueCount)")
         }
+
+        ReviewHistorySection(reviewHistory)
 
         if (pending > 0) {
             Card(
